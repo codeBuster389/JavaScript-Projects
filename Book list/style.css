@@ -1,0 +1,15 @@
+#book-form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.cust-width{
+    width: 50%;
+}
+
+.table{
+    width: 70%;
+    margin: auto;
+}
+

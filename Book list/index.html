@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .success,
+        .error {
+            color: white;
+            padding: 5px;
+            margin: 5px 0 15px 0;
+            display: flex;
+            width: 50%;
+            margin: auto;
+            justify-content: center;
+        }
+
+        .success {
+            background: green;
+        }
+
+        .error {
+            background: red;
+        }
+    </style>
+    <title>Book list</title>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+
+        <h2 class="text-center mb-5">Book List</h2>
+
+        <form id="book-form">
+            <label for="book-name">Book name</label>
+            <input id="book-name" type="text" class="m-auto mb-4 cust-width p-2">
+
+            <label for="author-name">Author name</label>
+            <input id="author-name" type="text" class="m-auto mb-4 cust-width p-2">
+
+            <label for="isbn">ISBN#</label>
+            <input id="isbn" type="text" class="m-auto mb-4 cust-width p-2">
+
+            <input id="button" type="submit" class="m-auto mb-5 cust-width">
+        </form>
+
+        <table class="table table-dark table-striped">
+
+            <thead>
+                <tr>
+                    <th>Book Name</th>
+                    <th>Author Name</th>
+                    <th>ISBN#</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody id="book-list">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/4ac2f0268c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
