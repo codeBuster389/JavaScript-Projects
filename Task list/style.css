@@ -1,0 +1,9 @@
+.taskArea{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fa-circle-xmark{
+    color: grey;
+}
